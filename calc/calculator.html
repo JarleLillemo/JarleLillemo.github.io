@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+#image-holder {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  left: 300px;
+  top: 100px; /* Or perhaps different coordinates */
+  display: none;
+}
+</style>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is an example of">
+    <meta name="viewport" content="width=device-witdh, initial">
+    <title></title>
+  </head>
+  <body>
+<h2>Balloon generator 3000!</h2>
+
+    <form>
+      value 1: <input type="text" id="value1" autofocus>
+      value 2: <input type="text" id="value2">
+      Operator:
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="min">Minus</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+      </select>
+      <button type="button" onclick="calc()" id="calculate" disabled="true">Calculate</button>
+      <button type="button" onclick="balloon()" id="balloons" disabled="true">Balloons</button>
+    </form>
+    <h2>Number of balloons:<div id="result"></div></h2>
+    <div id="balloons"></div>
+       <div id="image">
+            <img id="image-holder">
+       </div>
+
+      <a href="../index.html">Tilbake</a>
+  </body>
+  <script src="calc.js"></script>
+</html>
